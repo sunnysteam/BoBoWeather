@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\源码\图灵\Project\LifeSerivce\BoBoWeather\DesktopWeather\obj\Debug\
+D:\源码\图灵\Project\LifeSerivce\BoBoWeather\DesktopWeather\obj\Release\
 DesktopWeather
 none
 false
-DEBUG;TRACE
+TRACE
 D:\源码\图灵\Project\LifeSerivce\BoBoWeather\DesktopWeather\App.xaml
 11151548125
 
-14-1523818752
-781508666602
+10-2051773348
+78841434426
 MainWindow.xaml;
 
 True

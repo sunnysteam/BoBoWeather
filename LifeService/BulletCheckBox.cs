@@ -15,7 +15,7 @@ namespace LifeService
     public class BulletCheckBox : CheckBox
     {
         public static readonly DependencyProperty TextProperty = DependencyProperty.Register(
-            "Text", typeof(string), typeof(BulletCheckBox), new PropertyMetadata("Off"));
+            "Text", typeof(string), typeof(BulletCheckBox), new PropertyMetadata("Off")); 
         /// <summary>
         /// 默认文本（未选中）
         /// </summary>

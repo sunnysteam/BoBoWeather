@@ -4,17 +4,17 @@
 library
 C#
 .cs
-E:\源码\LifeSerivce\LifeService\obj\Release\
+D:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\obj\Release\
 LifeService
 none
 false
 TRACE
 
-12-127151336
+20-1859787695
 
-44-123097710
-1052060405536
-MainView.xaml;View\AlarmClockView\AlarmClockRingView.xaml;View\AlarmClockView\AlarmClockView.xaml;View\AlarmClockView\MainAlarmClockView.xaml;View\PhoneCallView\MainShortMessageView.xaml;View\ReminderView\MainMemoReminderView.xaml;View\ReminderView\MainRemoteReminderView.xaml;View\ReminderView\MemoReminderRingView.xaml;View\ReminderView\MemoReminderView.xaml;View\ReminderView\ReminderView.xaml;View\ReminderView\RemoteReminderView.xaml;View\WeatherView\WeatherView.xaml;
+59779828965
+8281753980
+ButtonDictionary.xaml;MainView.xaml;RollNum.xaml;View\AlarmClockView\AlarmClockAddItemView.xaml;View\AlarmClockView\AlarmClockEditView.xaml;View\AlarmClockView\AlarmClockLabelSetView.xaml;View\AlarmClockView\AlarmClockRingItemView.xaml;View\AlarmClockView\AlarmClockRingSetView.xaml;View\AlarmClockView\AlarmClockRingView.xaml;View\AlarmClockView\AlarmClockView.xaml;View\AlarmClockView\AlarmClockWeekSetView.xaml;View\AlarmClockView\MainAlarmClockView.xaml;View\ReminderView\MemoReminderView.xaml;View\ReminderView\ReminderAddItemView.xaml;View\ReminderView\ReminderRingView.xaml;View\ReminderView\ReminderView.xaml;View\WeatherView\MainWeatherView.xaml;View\WeatherView\WeatherDataView.xaml;View\WeatherView\WeatherSetterView.xaml;WindowDictionary.xaml;
 
-False
+True
 

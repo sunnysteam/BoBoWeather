@@ -1,15 +1,21 @@
-﻿E:\源码\LifeSerivce\LifeService\obj\Release\GeneratedInternalTypeHelper.g.cs
+﻿D:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\obj\Release\GeneratedInternalTypeHelper.g.cs
 
-FE:\源码\LifeSerivce\LifeService\MainView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\AlarmClockView\AlarmClockRingView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\AlarmClockView\AlarmClockView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\AlarmClockView\MainAlarmClockView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\PhoneCallView\MainShortMessageView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\ReminderView\MainMemoReminderView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\ReminderView\MainRemoteReminderView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\ReminderView\MemoReminderRingView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\ReminderView\MemoReminderView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\ReminderView\ReminderView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\ReminderView\RemoteReminderView.xaml;;
-FE:\源码\LifeSerivce\LifeService\View\WeatherView\WeatherView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\ButtonDictionary.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\RollNum.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\AlarmClockAddItemView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\AlarmClockEditView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\AlarmClockLabelSetView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\AlarmClockRingItemView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\AlarmClockRingSetView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\AlarmClockRingView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\AlarmClockView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\AlarmClockWeekSetView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\AlarmClockView\MainAlarmClockView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\ReminderView\MemoReminderView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\ReminderView\ReminderAddItemView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\ReminderView\ReminderView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\WeatherView\MainWeatherView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\WeatherView\WeatherDataView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\View\WeatherView\WeatherSetterView.xaml;;
+FD:\源码\图灵\Project\LifeSerivce\BoBoWeather\LifeService\WindowDictionary.xaml;;
 
