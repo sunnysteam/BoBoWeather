@@ -1,0 +1,1891 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LifeService</name>
+    </assembly>
+    <members>
+        <member name="T:LifeService.BulletCheckBox">
+            <summary>
+            BulletCheckBox.xaml 的交互逻辑
+            </summary>
+        </member>
+        <member name="P:LifeService.BulletCheckBox.Text">
+            <summary>
+            默认文本（未选中）
+            </summary>
+        </member>
+        <member name="P:LifeService.BulletCheckBox.CheckedText">
+            <summary>
+            选中状态文本
+            </summary>
+        </member>
+        <member name="P:LifeService.BulletCheckBox.CheckedForeground">
+            <summary>
+            选中状态前景样式
+            </summary>
+        </member>
+        <member name="P:LifeService.BulletCheckBox.CheckedBackground">
+            <summary>
+            选中状态背景色
+            </summary>
+        </member>
+        <member name="T:LifeService.LifeServicePlugin">
+            <summary>
+            生活服务模块
+            </summary>
+        </member>
+        <member name="P:LifeService.LifeServicePlugin.Instance">
+            <summary>
+            生活服务模块单例
+            </summary>
+        </member>
+        <member name="F:LifeService.LifeServicePlugin.ReminderReporter">
+            <summary>
+            提醒语音播报
+            </summary>
+        </member>
+        <member name="F:LifeService.LifeServicePlugin.CloseLifeServiceAction">
+            <summary>
+            关闭生活服务模块
+            </summary>
+        </member>
+        <member name="P:LifeService.LifeServicePlugin.LifeServiceView">
+            <summary>
+            生活服务模块属性
+            </summary>
+        </member>
+        <member name="M:LifeService.LifeServicePlugin.Dispose">
+            <summary>
+            卸载生活服务模块
+            </summary>
+        </member>
+        <member name="M:LifeService.LifeServicePlugin.GetDailyWeather">
+            <summary>
+            获得天气信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LifeService.LifeServicePlugin.SetRemoteReminder(System.String)">
+            <summary>
+            设置远程提醒
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LifeService.LifeServicePlugin.OpenAlarmClock">
+            <summary>
+            外部调用闹钟
+            </summary>
+        </member>
+        <member name="M:LifeService.LifeServicePlugin.OpenMemoReminder">
+            <summary>
+            外部调用备忘提醒
+            </summary>
+        </member>
+        <member name="M:LifeService.LifeServicePlugin.OpenRemoteReminder">
+            <summary>
+            外部调用远程提醒
+            </summary>
+        </member>
+        <member name="M:LifeService.LifeServicePlugin.ReminderFromReporter(System.String,System.Boolean)">
+            <summary>
+            提醒语音播报回调
+            </summary>
+            <param name="content"></param>
+            <param name="isReport"></param>
+        </member>
+        <member name="T:LifeService.MainView">
+            <summary>
+            MainView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            MainView
+            </summary>
+        </member>
+        <member name="M:LifeService.MainView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.AlarmClockModel.AlarmClockModel">
+            <summary>
+            闹钟模型
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.AlarmClockModel.AlarmClockModel.GuiD">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.AlarmClockModel.AlarmClockModel.AlarmTime">
+            <summary>
+            闹钟时间
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.AlarmClockModel.AlarmClockModel.AlarmDate">
+            <summary>
+            闹钟日期
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.AlarmClockModel.AlarmClockModel.Label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.AlarmClockModel.AlarmClockModel.Ring">
+            <summary>
+            铃声
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.AlarmClockModel.AlarmClockModel.RingPath">
+            <summary>
+            铃声路径
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.AlarmClockModel.AlarmClockModel.IsRepetition">
+            <summary>
+            是否稍后提醒
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.AlarmClockModel.AlarmClockModel.IsOpen">
+            <summary>
+            是否开启
+            </summary>
+        </member>
+        <member name="M:LifeService.Model.AlarmClockModel.AlarmClockModel.FetchData(System.Data.DataRow)">
+            <summary>
+            获取数据
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:LifeService.Model.AlarmClockModel.WeekEnum">
+            <summary>
+            星期枚举
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.EnumberHelper">
+            <summary>
+            枚举转list
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.EnumberEntity.Desction">
+            <summary>  
+            枚举的描述  
+            </summary>  
+        </member>
+        <member name="P:LifeService.Model.EnumberEntity.EnumName">
+            <summary>  
+            枚举名称  
+            </summary>  
+        </member>
+        <member name="P:LifeService.Model.EnumberEntity.EnumValue">
+            <summary>  
+            枚举对象的值  
+            </summary>  
+        </member>
+        <member name="T:LifeService.Model.DataManager">
+            <summary>
+            数据管理类
+            </summary>
+        </member>
+        <member name="M:LifeService.Model.DataManager.SetOriginalData">
+            <summary>
+            读取初始数据
+            </summary>
+        </member>
+        <member name="M:LifeService.Model.DataManager.StartConnect">
+            <summary>
+            开始连接数据库
+            </summary>
+        </member>
+        <member name="M:LifeService.Model.DataManager.CloseConnect">
+            <summary>
+            关闭数据库连接
+            </summary>
+        </member>
+        <member name="M:LifeService.Model.DataManager.CreateTables">
+             <summary>
+            在指定数据库中创建一个table
+             </summary>
+        </member>
+        <member name="T:LifeService.Model.IDataModel">
+            <summary>
+            数据模型接口
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.ReminderModel.ContactsModel">
+            <summary>
+            联系人模型
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.ReminderModel.ReminderModel">
+            <summary>
+            提醒模型
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.ReminderModel.ReminderModel.GuiD">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.ReminderModel.ReminderModel.ReminderTime">
+            <summary>
+            提醒时间
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.ReminderModel.ReminderModel.Content">
+            <summary>
+            提醒内容
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.ReminderModel.ReminderModel.Contact">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.ReminderModel.ReminderModel.Record">
+            <summary>
+            语音
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.ReminderModel.ReminderModel.RecordPath">
+            <summary>
+            语音路径
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.ReminderModel.ReminderModel.Ring">
+            <summary>
+            铃声
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.SqlLite">
+            <summary>
+            数据库接口类
+            </summary>
+        </member>
+        <member name="M:LifeService.Model.SqlLite.#ctor(System.String)">
+            <summary>
+            连接指定的数据库
+            </summary>
+            <param name="datasource">连接字符串</param>
+        </member>
+        <member name="M:LifeService.Model.SqlLite.Dispose">
+            <summary>
+            清理托管资源
+            </summary>
+        </member>
+        <member name="M:LifeService.Model.SqlLite.Dispose(System.Boolean)">
+            <summary>
+            清理所有使用资源
+            </summary>
+            <param name="disposing">如果为true则清理托管资源</param>
+        </member>
+        <member name="M:LifeService.Model.SqlLite.AddParameter(System.String,System.String)">
+            <summary>
+            添加参数
+            </summary>
+            <param name="key">参数名</param>
+            <param name="value">参数值</param>
+        </member>
+        <member name="M:LifeService.Model.SqlLite.ExecuteNonQuery(System.String)">
+            <summary>
+            执行SQL语句
+            </summary>
+            <param name="queryStr">SQL语句</param>
+        </member>
+        <member name="M:LifeService.Model.SqlLite.ExecuteQuery(System.String)">
+            <summary>
+            执行SQL语句并返回所有结果
+            </summary>
+            <param name="queryStr">SQL语句</param>
+            <returns>返回DataTable</returns>
+        </member>
+        <member name="M:LifeService.Model.SqlLite.ExecuteRow(System.String)">
+            <summary>
+            执行SQL语句并返回第一行
+            </summary>
+            <param name="queryStr">SQL语句</param>
+            <returns>返回DataRow</returns>
+        </member>
+        <member name="M:LifeService.Model.SqlLite.ExecuteScalar(System.String)">
+            <summary>
+            执行SQL语句并返回结果第一行的第一列
+            </summary>
+            <param name="queryStr">SQL语句</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="T:LifeService.Model.WeatherModel.WeatherModel">
+            <summary>
+            天气模型
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.WeatherModel.WeatherModel.GuiD">
+            <summary>
+            唯一值 
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.WeatherModel.WeatherModel.City">
+            <summary>
+            城市名
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.WeatherModel.WeatherModel.DegreeFormat">
+            <summary>
+            天气格式
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.WeatherDataModel.Results">
+            <summary>
+            返回结果
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.WeatherDataModel.Status">
+            <summary>
+            错误状态
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.WeatherDataModel.Status_Code">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.Weathermodel.Results">
+            <summary>
+            返回结果
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Results.Location">
+            <summary>
+            地址信息
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Results.Daily">
+            <summary>
+            天气预报
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Results.Now">
+            <summary>
+            实时气温
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Results.Last_Update">
+            <summary>
+            数据更新时间（该城市的本地时间）
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.Weathermodel.Location">
+            <summary>
+            城市信息
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.Weathermodel.Daily">
+            <summary>
+            天气预报
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Date">
+            <summary>
+            日期
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Text_Day">
+            <summary>
+            白天天气现象文字
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Code_Day">
+            <summary>
+            白天天气现象代码
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Text_Night">
+            <summary>
+            晚间天气现象文字
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Code_Night">
+            <summary>
+            晚间天气现象代码
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.High">
+            <summary>
+            当天最高温度
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Low">
+            <summary>
+            当天最低温度
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Precip">
+            <summary>
+            降水概率，范围0~100，单位百分比
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Wind_Direction">
+            <summary>
+            风向文字
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Wind_Direction_Degree">
+            <summary>
+            风向角度，范围0~360
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Wind_Speed">
+            <summary>
+            风速，单位km/h（当unit=c时）、mph（当unit=f时）
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Daily.Wind_Scale">
+            <summary>
+            风力等级
+            </summary>
+        </member>
+        <member name="T:LifeService.Model.Weathermodel.Now">
+            <summary>
+            实时天气
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Text">
+            <summary>
+            天气现象文字
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Code">
+            <summary>
+            天气现象代码
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Temperature">
+            <summary>
+            温度，单位为c摄氏度或f华氏度
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Feels_like">
+            <summary>
+            体感温度，单位为c摄氏度或f华氏度
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Pressure">
+            <summary>
+            气压，单位为mb百帕或in英寸
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Humidity">
+            <summary>
+            相对湿度，0~100，单位为百分比
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Visibility">
+            <summary>
+            能见度，单位为km公里或mi英里
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Wind_Direction">
+            <summary>
+            风向文字
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Wind_Direction_Degree">
+            <summary>
+            风向角度，范围0~360，0为正北，90为正东，180为正南，270为正西
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Wind_Speed">
+            <summary>
+            风速，单位为km/h公里每小时或mph英里每小时
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Wind_Scale">
+            <summary>
+            风力等级，请参考：http://baike.baidu.com/view/465076.htm
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Clouds">
+            <summary>
+            云量，范围0~100，天空被云覆盖的百分比 #目前不支持中国城市#
+            </summary>
+        </member>
+        <member name="P:LifeService.Model.Weathermodel.Now.Dew_Point">
+            <summary>
+            露点温度，请参考：http://baike.baidu.com/view/118348.htm #目前不支持中国城市#
+            </summary>
+        </member>
+        <member name="T:LifeService.RollNum">
+            <summary>
+            RollNum.xaml 的交互逻辑
+            </summary>
+            <summary>
+            RollNum
+            </summary>
+        </member>
+        <member name="P:LifeService.RollNum.YOffset">
+            <summary>
+            获取或设置当前中间项序号
+            </summary>
+        </member>
+        <member name="P:LifeService.RollNum.CurrentIndex">
+            <summary>
+            获取或设置当前中间项序号
+            </summary>
+        </member>
+        <member name="P:LifeService.RollNum.Currentitem">
+            <summary>
+            当前的项目
+            </summary>
+        </member>
+        <member name="P:LifeService.RollNum.Items">
+            <summary>
+            所有的项目
+            </summary>
+        </member>
+        <member name="P:LifeService.RollNum.SizeScale">
+            <summary>
+            移动的距离
+            </summary>
+        </member>
+        <member name="P:LifeService.RollNum.OpacityChange">
+            <summary>
+            移动的距离
+            </summary>
+        </member>
+        <member name="F:LifeService.RollNum.controlheight">
+            <summary>
+            控件的高度
+            </summary>
+        </member>
+        <member name="P:LifeService.RollNum.ControlHeight">
+            <summary>
+            移动的距离
+            </summary>
+        </member>
+        <member name="P:LifeService.RollNum.PreHeight">
+            <summary>
+            每段的距离
+            </summary>
+        </member>
+        <member name="M:LifeService.RollNum.Layout">
+            <summary>
+            布局
+            </summary>
+        </member>
+        <member name="M:LifeService.RollNum.AutoFit">
+            <summary>
+            在动画结束后，自动回复到合适位置
+            </summary>
+        </member>
+        <member name="M:LifeService.RollNum.UpdateContent">
+            <summary>
+            在当前索引更新后，内容立即更新 
+            暂时没有想到更好的方法
+            </summary>
+            <param name="Type"></param>
+        </member>
+        <member name="M:LifeService.RollNum.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._guid">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._hoursstring">
+            <summary>
+            小时
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._minutesstring">
+            <summary>
+            分钟
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._format">
+            <summary>
+            时间格式
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._time">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._titleContent">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._days">
+            <summary>
+            重复
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._isRepetition">
+            <summary>
+            稍后提醒
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel._ring">
+            <summary>
+            铃声
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.LoadRollHoursData(LifeService.RollNum)">
+            <summary>
+            加载小时
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.LoadRollMinutesData(LifeService.RollNum)">
+            <summary>
+            加载分钟
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.LoadRollDataFormat(LifeService.RollNum)">
+            <summary>
+            加载格式
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.MouseLeftButtonDown(System.Windows.Controls.Grid)">
+            <summary>
+            删除/取消按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.LoadedDeleteButton(System.Windows.Controls.Border)">
+            <summary>
+            加载初始功能类型
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.MouseLeftButtonDownRepetion(System.Windows.Controls.Viewbox)">
+            <summary>
+            选择星期
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.MouseLeftButtonDownLabel(System.Windows.Controls.Viewbox)">
+            <summary>
+            设置标签
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.MouseLeftButtonDownRing(System.Windows.Controls.Viewbox)">
+            <summary>
+            设置铃声
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.SaveData(System.Windows.Controls.Grid)">
+            <summary>
+            存储闹钟
+            </summary>
+            <param name="elememt"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.DRepetionFadeOut_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.DLabelFadeOut_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.DRingFadeOut_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.BackFromLabelView(System.String)">
+            <summary>
+            标签设置完成回调
+            </summary>
+            <param name="label"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.BackFromRingView(System.String)">
+            <summary>
+            铃声设置完成回调
+            </summary>
+            <param name="label"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockAddItemViewModel.BackFromWeekView(System.Collections.Generic.List{LifeService.ViewModel.AlarmClockViewModel.WeekDay})">
+            <summary>
+            星期设置完成回调
+            </summary>
+            <param name="temp"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockLabelSetViewModel._label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockLabelSetViewModel._length">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockLabelSetViewModel.ClickBack(System.Windows.Controls.Grid)">
+            <summary>
+            返回按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockLabelSetViewModel.TextChanged(System.Windows.Controls.TextBox)">
+            <summary>
+            字符变化数
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockLabelSetViewModel.LabelDelete(System.Windows.Controls.TextBox)">
+            <summary>
+            删除按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingItemViewModel._label">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingSetViewModel._label">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingSetViewModel._listBoxItems">
+            <summary>
+            闹钟集合
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingSetViewModel.ClickBack(System.Windows.Controls.Grid)">
+            <summary>
+            返回按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingSetViewModel.LoadData(System.Windows.Controls.ListBox)">
+            <summary>
+            listbox加载
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingSetViewModel.UnLoadData(System.Windows.Controls.ListBox)">
+            <summary>
+            listbox加载
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingSetViewModel.AddRing(System.String)">
+            <summary>
+            获取初始数据
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingViewModel._guid">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingViewModel._alarmTime">
+            <summary>
+            闹铃时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingViewModel._label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingViewModel._nextAlarmTime">
+            <summary>
+            下一次时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingViewModel._isRepetition">
+            <summary>
+            是否稍后提醒
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockRingViewModel.TimeTick">
+            <summary>
+            计时
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._guid">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._alarmTime">
+            <summary>
+            闹钟时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._alarmDate">
+            <summary>
+            闹钟日期
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._mainLabel">
+            <summary>
+            标签+时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._ring">
+            <summary>
+            铃声
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._ringpath">
+            <summary>
+            铃声路径
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._isRepetition">
+            <summary>
+            是否稍后提醒
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._isOpen">
+            <summary>
+            是否开启
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._format">
+            <summary>
+            时间格式
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel._weekList">
+            <summary>
+            周
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel.DeleteButton(System.Windows.Controls.UserControl)">
+            <summary>
+            删除按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel.CheckedBox(System.Windows.Controls.ScrollViewer)">
+            <summary>
+            是否开启闹钟
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel.MouseLeftButtonDownEdit(System.Windows.Controls.Grid)">
+            <summary>
+            编辑闹钟
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel.SetMainLabel">
+            <summary>
+            设置label
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel.DeleteData">
+            <summary>
+            删除闹钟
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.AlarmClockViewModel.FetchData(LifeService.Model.AlarmClockModel.AlarmClockModel)">
+            <summary>
+            取数据
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="P:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockManager.TodayWeek">
+            <summary>
+            星期
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockManager.AlarmClockMonitor">
+            <summary>
+            闹钟监视
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockManager.MatchTime(LifeService.Model.AlarmClockModel.AlarmClockModel)">
+            <summary>
+            时间匹配
+            </summary>
+            <param name="clockModel"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockManager.AlarmClockRing(LifeService.Model.AlarmClockModel.AlarmClockModel)">
+            <summary>
+            响铃
+            </summary>
+            <param name="clockModel"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockManager.AddToAlarmClocks(LifeService.Model.AlarmClockModel.AlarmClockModel)">
+            <summary>
+            添加到闹钟集合
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel._listBoxItems">
+            <summary>
+            闹钟集合
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel._buttonContent">
+            <summary>
+            编辑/完成按钮
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.Loaded(System.Windows.Window)">
+            <summary>
+            主窗口加载
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.WindowDrag(System.Windows.Window)">
+            <summary>
+            窗口移动
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.Deactivated(System.Windows.Window)">
+            <summary>
+            失去焦点后关闭窗口
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.LoadedBorder(System.Windows.Controls.Border)">
+            <summary>
+            主border加载
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.AddButton(System.Windows.Controls.Border)">
+            <summary>
+            添加按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.LoadData(System.Windows.Controls.ListBox)">
+            <summary>
+            listbox加载
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.DLoginFadeOut_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.DLoginFadeIn_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.FetchData(System.Windows.Controls.ListBox)">
+            <summary>
+            获取初始数据
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.FetchEditData(System.Windows.Controls.ListBox,System.String)">
+            <summary>
+            获取需修改数据
+            </summary>
+            <param name="element"></param>
+            <param name="buttonContent"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.AddNewReminder(System.Windows.Controls.ListBox,LifeService.Model.AlarmClockModel.AlarmClockModel)">
+            <summary>
+            添加闹钟
+            </summary>
+            <param name="element"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.AddNewEditReminder(System.Windows.Controls.ListBox,LifeService.Model.AlarmClockModel.AlarmClockModel)">
+            <summary>
+            添加需编辑的闹钟
+            </summary>
+            <param name="element"></param>
+            <param name="model"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.DeleteFormListBox(System.Windows.Controls.ListBoxItem)">
+            <summary>
+            删除闹钟回调
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.EditAlarmClock(LifeService.Model.AlarmClockModel.AlarmClockModel)">
+            <summary>
+            编辑闹钟
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.BackToMainView(System.String)">
+            <summary>
+            返回闹钟主页面回调
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.AlarmClockViewModel.MainAlarmClockViewModel.CloseAlarmClock">
+            <summary>
+            外部关闭提醒回调
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.MainWindowViewModel.ViewBox(System.Windows.Controls.Grid)">
+            <summary>
+            加载主界面
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.MainWindowViewModel.GetWeatherData">
+            <summary>
+            调取天气方法
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.MainWindowViewModel.Remind(System.Windows.Controls.Primitives.ButtonBase)">
+            <summary>
+            提醒按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.MainWindowViewModel.Weather(System.Windows.Controls.Primitives.ButtonBase)">
+            <summary>
+            天气按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.MainWindowViewModel.MainAlarmClock(System.Windows.Controls.Primitives.ButtonBase)">
+            <summary>
+            闹钟按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.MainWindowViewModel._mainWeatherTimer">
+            <summary>
+            字幕滚动
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.MainWindowViewModel.SearchCity(System.String,System.String)">
+            <summary>
+            回调需要查询的城市
+            </summary>
+            <param name="searchResult"></param>
+            <param name="degreeFormat"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.MainWindowViewModel.FetchData(LifeService.Model.WeatherModel.WeatherModel)">
+            <summary>
+            取数据
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderRingViewModel._guid">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderRingViewModel._alarmTime">
+            <summary>
+            闹铃时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderRingViewModel._nextAlarmTime">
+            <summary>
+            下一次时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderRingViewModel._content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel.MouseLeftButtonDown(System.Windows.Controls.Grid)">
+            <summary>
+            编辑闹钟
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._guid">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._reminderTime">
+            <summary>
+            提醒时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._labelContent">
+            <summary>
+            显示内容
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._content">
+            <summary>
+            提醒内容
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._contact">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._record">
+            <summary>
+            录音
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._recordPath">
+            <summary>
+            语音路径
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.MemoReminderViewModel._ring">
+            <summary>
+            铃声
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.#ctor(System.String)">
+            <summary>
+            添加
+            </summary>
+            <param name="function"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.#ctor(LifeService.Model.ReminderModel.ReminderModel)">
+            <summary>
+            编辑
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._dateContent">
+            <summary>
+            日期内容
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._guid">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._reminderTime">
+            <summary>
+            提醒时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._contact">
+            <summary>
+            联系人
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._record">
+            <summary>
+            语音
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._recordPath">
+            <summary>
+            语音路径
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._ring">
+            <summary>
+            铃声
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._wordIconPath">
+            <summary>
+            文字
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._voiceIconPath">
+            <summary>
+            语音
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._wordIcon">
+            <summary>
+            文字图标
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._voiceIcon">
+            <summary>
+            语音图标
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._titleContent">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._length">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel._contactsList">
+            <summary>
+            联系人列表
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.LoadRollData(LifeService.RollNum)">
+            <summary>
+            加载小时
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.MouseLeftButtonDown(System.Windows.Controls.Image)">
+            <summary>
+            编辑提醒内容
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.MouseLeftButtonDownDelete(System.Windows.Controls.Grid)">
+            <summary>
+            删除提醒
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.MouseLeftButtonDownDate(System.Windows.Controls.Grid)">
+            <summary>
+            编辑时间
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.MouseLeftButtonDownRing(System.Windows.Controls.Viewbox)">
+            <summary>
+            设置铃声
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.SaveData(System.Windows.Controls.Grid)">
+            <summary>
+            存储提醒
+            </summary>
+            <param name="elememt"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.TextChanged(System.Windows.Controls.TextBox)">
+            <summary>
+            字符变化数
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.LoadedTextBox(System.Windows.Controls.TextBox)">
+            <summary>
+            字符变化数
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.DRingFadeOut_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderAddItemViewModel.BackFromRingView(System.String)">
+            <summary>
+            铃声设置完成回调
+            </summary>
+            <param name="ring"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderManager.ReminderReporter">
+            <summary>
+            提醒语音播报
+            </summary>
+        </member>
+        <member name="P:LifeService.ViewModel.ReminderViewModel.ReminderManager.TodayWeek">
+            <summary>
+            星期
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderManager.ReminderMonitor">
+            <summary>
+            提醒监视
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderManager.ReminderFromReporter(System.String,System.Boolean)">
+            <summary>
+            提醒语音播报回调
+            </summary>
+            <param name="content"></param>
+            <param name="isReport"></param>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderRingViewModel.ReminderReporter">
+            <summary>
+            提醒语音播报
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderRingViewModel._guid">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderRingViewModel._reminderTime">
+            <summary>
+            提醒时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderRingViewModel._content">
+            <summary>
+            提醒内容
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderRingViewModel._label">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderRingViewModel._nextReminderTime">
+            <summary>
+            下一次时间
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderRingViewModel._ring">
+            <summary>
+            铃声
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderRingViewModel.TimeTick">
+            <summary>
+            计时
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderViewModel._listBoxItems">
+            <summary>
+            提醒集合
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderViewModel._titleContent">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderViewModel._remindMemoIconPath">
+            <summary>
+            备忘提醒
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderViewModel._remindRemoteIconPath">
+            <summary>
+            远程提醒
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.ReminderViewModel.ReminderViewModel._titleIcon">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.Loaded(System.Windows.Window)">
+            <summary>
+            主窗口加载
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.LoadedBorder(System.Windows.Controls.Border)">
+            <summary>
+            主border加载
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.LoadedAddButton(System.Windows.Controls.Button)">
+            <summary>
+            主border加载
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.WindowDrag(System.Windows.Window)">
+            <summary>
+            窗口移动
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.AddButton(System.Windows.Controls.Border)">
+            <summary>
+            添加按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.Deactivated(System.Windows.Window)">
+            <summary>
+            失去焦点后关闭窗口
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.DLoginFadeOut_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.FetchData(System.Windows.Controls.ListBox)">
+            <summary>
+            获取初始数据
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.EditReminder(LifeService.Model.ReminderModel.ReminderModel)">
+            <summary>
+            编辑提醒
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.DLoginFadeIn_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.BackToMainView(System.String)">
+            <summary>
+            返回提醒主页面回调
+            </summary>
+            <param name="target"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.ReminderViewModel.ReminderViewModel.CloseReminder">
+            <summary>
+            外部关闭提醒回调
+            </summary>
+        </member>
+        <member name="T:LifeService.ViewModel.WeatherViewModel.DegreeFormatConverter">
+            <summary>
+            温度格式转换
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.MainWeatherViewModel.WindowDrag(System.Windows.Window)">
+            <summary>
+            窗口移动
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.MainWeatherViewModel.Deactivated(System.Windows.Window)">
+            <summary>
+            失去焦点后关闭窗口
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.MainWeatherViewModel.Setter(System.Windows.Controls.Border)">
+            <summary>
+            设置按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.MainWeatherViewModel.DLoginFadeOut_Completed(System.Object,System.EventArgs)">
+            <summary>
+            动画完成后加载设置界面
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.MainWeatherViewModel.SearchCity(System.String,System.String)">
+            <summary>
+            查询城市的回调
+            </summary>
+            <param name="searchResult"></param>
+            <param name="degreeFormat"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.MainWeatherViewModel.BackFromSetter">
+            <summary>
+            返回按钮回调
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.MainWeatherViewModel.CloseWeather">
+            <summary>
+            外部关闭提醒回调
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.WeatherViewModel.WeatherDataViewModel._matchWord">
+            <summary>
+            匹配的字符
+            </summary>
+        </member>
+        <member name="F:LifeService.ViewModel.WeatherViewModel.WeatherDataViewModel._targetWord">
+            <summary>
+            目标字符
+            </summary>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherManager.GetWeatherDataNow(System.String,System.String)">
+            <summary>
+            判定是否第一次启动或修改了城市
+            是：调用
+            否：直接取属性以减少调用开支
+            </summary>
+            <param name="url"></param>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherManager.GetWeatherDataDaily(System.String,System.String)">
+            <summary>
+            判定是否第一次启动或修改了城市
+            是：调用
+            否：直接取属性以减少调用开支
+            </summary>
+            <param name="url"></param>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherManager.WeatherData(System.String)">
+            <summary>
+            调用心知天气
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherManager.ReturnDailyWeather">
+            <summary>
+            宿主软件调用3天的天气
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherSetterViewModel.TextChanged(System.Windows.Controls.ScrollViewer)">
+            <summary>
+            查询城市改变
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherSetterViewModel.Back(System.Windows.Controls.Grid)">
+            <summary>
+            返回按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherSetterViewModel.IsChecked(System.Windows.Controls.Grid)">
+            <summary>
+            选择天气格式按钮
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherSetterViewModel.DLoginFadeOut_Completed(System.Object,System.EventArgs)">
+            <summary>
+            返回按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherSetterViewModel.AddNewReminder(System.Windows.Controls.ScrollViewer,System.String)">
+            <summary>
+            新增模糊匹配的城市
+            </summary>
+            <param name="element"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherSetterViewModel.SearchCity(System.String)">
+            <summary>
+            查询城市
+            </summary>
+            <param name="searchResult"></param>
+        </member>
+        <member name="M:LifeService.ViewModel.WeatherViewModel.WeatherSetterViewModel.ReLocate(System.Windows.Controls.Grid)">
+            <summary>
+            重新定位
+            </summary>
+            <param name="mainGrid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.AlarmClockAddItemView">
+            <summary>
+            AlarmClockAddItemView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            AlarmClockAddItemView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.AlarmClockAddItemView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.AlarmClockEditView">
+            <summary>
+            AlarmClockEditView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            AlarmClockEditView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.AlarmClockEditView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.AlarmClockLabelSetView">
+            <summary>
+            AlarmClockLabelSetView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            AlarmClockLabelSetView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.AlarmClockLabelSetView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.AlarmClockRingItemView">
+            <summary>
+            AlarmClockRingItemView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            AlarmClockRingItemView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.AlarmClockRingItemView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.AlarmClockRingSetView">
+            <summary>
+            AlarmClockRingSetView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            AlarmClockRingSetView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.AlarmClockRingSetView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.AlarmClockRingView">
+            <summary>
+            AlarmClockRingView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            AlarmClockRingView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.AlarmClockRingView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.AlarmClockView">
+            <summary>
+            AlarmClockView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            AlarmClockView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.AlarmClockView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.AlarmClockWeekSetView">
+            <summary>
+            AlarmClockWeekSetView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            AlarmClockWeekSetView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.AlarmClockWeekSetView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.AlarmClockView.MainAlarmClockView">
+            <summary>
+            MainAlarmClockView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            MainAlarmClockView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.AlarmClockView.MainAlarmClockView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.ReminderView.MemoReminderView">
+            <summary>
+            MemoReminderView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            MemoReminderView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.ReminderView.MemoReminderView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.ReminderView.ReminderAddItemView">
+            <summary>
+            ReminderAddItemView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            ReminderAddItemView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.ReminderView.ReminderAddItemView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.ReminderView.ReminderRingView">
+            <summary>
+            ReminderRingVIew.xaml 的交互逻辑
+            </summary>
+            <summary>
+            ReminderRingView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.ReminderView.ReminderRingView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.ReminderView.ReminderView">
+            <summary>
+            ReminderView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            ReminderView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.ReminderView.ReminderView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.WeatherView.MainWeatherView">
+            <summary>
+            MainWeatherView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            MainWeatherView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.WeatherView.MainWeatherView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.WeatherView.WeatherDataView">
+            <summary>
+            WeatherDataView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WeatherDataView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.WeatherView.WeatherDataView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:LifeService.View.WeatherView.WeatherSetterView">
+            <summary>
+            WeatherSetterView.xaml 的交互逻辑
+            </summary>
+            <summary>
+            WeatherSetterView
+            </summary>
+        </member>
+        <member name="M:LifeService.View.WeatherView.WeatherSetterView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:LifeService.Command.DeletgateCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})">
+            <summary>
+            委托命令
+            </summary>
+            <param name="executeMethod"></param>
+            <param name="canExecuteMethod"></param>
+        </member>
+        <member name="M:LifeService.Command.DeletgateCommand`1.CanExecute(`0)">
+            <summary>
+            判定是否可被执行的方法
+            </summary>
+        </member>
+        <member name="M:LifeService.Command.DeletgateCommand`1.Execute(`0)">
+            <summary>
+             执行命令
+            </summary>
+        </member>
+        <member name="T:LifeService.Properties.Resources">
+            <summary>
+              强类型资源类，用于查找本地化字符串等。
+            </summary>
+        </member>
+        <member name="P:LifeService.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:LifeService.Properties.Resources.Culture">
+            <summary>
+              覆盖当前线程的 CurrentUICulture 属性
+              使用此强类型的资源类的资源查找。
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

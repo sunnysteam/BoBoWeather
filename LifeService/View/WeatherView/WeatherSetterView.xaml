@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="LifeService.View.WeatherView.WeatherSetterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:local="clr-namespace:LifeService.ViewModel.WeatherViewModel"
+             xmlns:lifeservice="clr-namespace:LifeService"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <local:DegreeFormatConverter x:Key="DegreeFormatConverter"></local:DegreeFormatConverter>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/LifeService;component/WindowDictionary.xaml"/>
+                <ResourceDictionary Source="/LifeService;component/ButtonDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid x:Name="mainGrid" Width="425" Height="281" Style="{StaticResource OpacityGridStyle}">
+        <!--<i:Interaction.Triggers>
+            <i:EventTrigger EventName="Loaded">
+                <i:InvokeCommandAction Command="{Binding LoadedCommand}" CommandParameter="{Binding ElementName=mainGrid}" />
+            </i:EventTrigger>
+        </i:Interaction.Triggers>-->
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource WeatherSetterBackButton}" Command="{Binding BackCommand}" CommandParameter="{Binding ElementName=mainGrid}" Height="61" Width="43" Margin="10,0,0,0"/>
+        <Label Content="设置" HorizontalAlignment="Center" Margin="173,8,185,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Microsoft YaHei" FontSize="24" Width="67" Foreground="White" Height="38"/>
+        <Label Content="当前城市：" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="35,120,0,0" FontFamily="Microsoft YaHei" Foreground="White"/>
+        <Label Content="{Binding City,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="96,120,0,0" FontFamily="Microsoft YaHei" Foreground="White"/>
+        <ScrollViewer x:Name="ScrollViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" PanningMode="VerticalOnly" Margin="5,120,5,10" ManipulationBoundaryFeedback="ScrollViewer_ManipulationBoundaryFeedback" Style="{x:Null}" Template="{DynamicResource smallScrollViewerControlTemplate}">
+            <Grid>
+
+            </Grid>
+        </ScrollViewer>
+        <Border HorizontalAlignment="Left" Height="40" Margin="35,75,0,0" VerticalAlignment="Top" Width="356" BorderThickness="0.5" CornerRadius="5" Background="#153F5F" >
+            <lifeservice:WateMarkTextBox x:Name="watermark" Text="{Binding CityName,UpdateSourceTrigger=PropertyChanged}" Height="40" Style="{StaticResource WaterMarkTextBoxStyle}" BorderBrush="{x:Null}" Foreground="#919EAA" Margin="4.333,0.333,4.333,0" SelectionBrush="{x:Null}" CaretBrush="White" VerticalAlignment="Center" FontSize="16" VerticalContentAlignment="Center" Background="{x:Null}" WateMark="请输入城市名查询">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="TextChanged">
+                        <i:InvokeCommandAction Command="{Binding TextChangedCommand}" CommandParameter="{Binding ElementName=ScrollViewer}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </lifeservice:WateMarkTextBox>
+        </Border>
+        <Label Content="/" HorizontalAlignment="Left" Margin="366,8,0,0" VerticalAlignment="Top" Width="25" FontFamily="Microsoft YaHei" FontSize="24" Foreground="#FF919EAA"/>
+        <Grid x:Name="radioButtonGrid">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Loaded">
+                    <i:InvokeCommandAction Command="{Binding LoadedCheckedCommand}" CommandParameter="{Binding ElementName=radioButtonGrid}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <RadioButton GroupName="DrgeeFormat" Content="°C" HorizontalAlignment="Left" Margin="339,15,0,0" VerticalAlignment="Top" Style="{StaticResource NoRadioButtonStyle}" FontFamily="Microsoft YaHei" FontSize="24" Foreground="#FF919EAA" IsChecked="{Binding DegreeFormat,Converter={StaticResource DegreeFormatConverter},ConverterParameter=0}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Checked">
+                        <i:InvokeCommandAction Command="{Binding IsCheckedCommand}" CommandParameter="{Binding ElementName=radioButtonGrid}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </RadioButton>
+            <RadioButton GroupName="DrgeeFormat" Content="°F" HorizontalAlignment="Left" Margin="380,15,0,0" VerticalAlignment="Top" Style="{StaticResource NoRadioButtonStyle}" FontFamily="Microsoft YaHei" FontSize="24" Foreground="#FF919EAA" IsChecked="{Binding DegreeFormat,Converter={StaticResource DegreeFormatConverter},ConverterParameter=1}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Checked">
+                        <i:InvokeCommandAction Command="{Binding IsCheckedCommand}" CommandParameter="{Binding ElementName=radioButtonGrid}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </RadioButton>
+        </Grid>
+    </Grid>
+</UserControl>

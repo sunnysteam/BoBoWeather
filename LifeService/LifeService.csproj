@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F53A59A4-3BC9-47F0-B74B-0E6611F387AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LifeService</RootNamespace>
+    <AssemblyName>LifeService</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\WpfApp1\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\WpfApp1\bin\Debug\LifeService.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\WpfApplication1\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.NLog40, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.NLog40.3.3.1\lib\net40\Common.Logging.NLog40.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.3.0.19032, Culture=neutral, PublicKeyToken=669f0b5e8f868abf, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.Extras.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.0.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.104.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.104.0\lib\net451\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.104.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.104.0\lib\net451\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BulletCheckBox.cs" />
+    <Compile Include="LifeServicePlugin.cs" />
+    <Compile Include="LogWriter.cs" />
+    <Compile Include="MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AlarmClockModel\AlarmClockModel.cs" />
+    <Compile Include="Model\AlarmClockModel\WeekEnum.cs" />
+    <Compile Include="Model\EnumberEntity.cs" />
+    <Compile Include="Model\DataManager.cs" />
+    <Compile Include="Model\IDataModel.cs" />
+    <Compile Include="Model\ReminderModel\ContactsModel.cs" />
+    <Compile Include="Model\ReminderModel\ReminderModel.cs" />
+    <Compile Include="Model\SqlLiteHelper.cs" />
+    <Compile Include="Model\WeatherModel\CityModel.cs" />
+    <Compile Include="Model\WeatherModel\WeatherDataModel.cs" />
+    <Compile Include="Model\WeatherModel\WeatherModel.cs" />
+    <Compile Include="RollNum.xaml.cs">
+      <DependentUpon>RollNum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\AlarmClockViewModel\AlarmClockAddItemViewModel.cs" />
+    <Compile Include="ViewModel\AlarmClockViewModel\AlarmClockLabelSetViewModel.cs" />
+    <Compile Include="ViewModel\AlarmClockViewModel\AlarmClockRingItemViewModel.cs" />
+    <Compile Include="ViewModel\AlarmClockViewModel\AlarmClockRingSetViewModel.cs" />
+    <Compile Include="ViewModel\AlarmClockViewModel\AlarmClockRingViewModel.cs" />
+    <Compile Include="ViewModel\AlarmClockViewModel\AlarmClockViewModel.cs" />
+    <Compile Include="ViewModel\AlarmClockViewModel\AlarmClockWeekSetViewModel.cs" />
+    <Compile Include="ViewModel\AlarmClockViewModel\MainAlarmClockManager.cs" />
+    <Compile Include="ViewModel\AlarmClockViewModel\MainAlarmClockViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\ReminderViewModel\MemoReminderRingViewModel.cs" />
+    <Compile Include="ViewModel\ReminderViewModel\MemoReminderViewModel.cs" />
+    <Compile Include="ViewModel\ReminderViewModel\ReminderAddItemViewModel.cs" />
+    <Compile Include="ViewModel\ReminderViewModel\ReminderManager.cs" />
+    <Compile Include="ViewModel\ReminderViewModel\ReminderRingViewModel.cs" />
+    <Compile Include="ViewModel\ReminderViewModel\ReminderViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="ViewModel\WeatherViewModel\DegreeFormatConverter.cs" />
+    <Compile Include="ViewModel\WeatherViewModel\MainWeatherViewModel.cs" />
+    <Compile Include="ViewModel\WeatherViewModel\WeatherDataViewModel.cs" />
+    <Compile Include="ViewModel\WeatherViewModel\WeatherManager.cs" />
+    <Compile Include="ViewModel\WeatherViewModel\WeatherSetterViewModel.cs" />
+    <Compile Include="View\AlarmClockView\AlarmClockAddItemView.xaml.cs">
+      <DependentUpon>AlarmClockAddItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmClockView\AlarmClockEditView.xaml.cs">
+      <DependentUpon>AlarmClockEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmClockView\AlarmClockLabelSetView.xaml.cs">
+      <DependentUpon>AlarmClockLabelSetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmClockView\AlarmClockRingItemView.xaml.cs">
+      <DependentUpon>AlarmClockRingItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmClockView\AlarmClockRingSetView.xaml.cs">
+      <DependentUpon>AlarmClockRingSetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmClockView\AlarmClockRingView.xaml.cs">
+      <DependentUpon>AlarmClockRingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmClockView\AlarmClockView.xaml.cs">
+      <DependentUpon>AlarmClockView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmClockView\AlarmClockWeekSetView.xaml.cs">
+      <DependentUpon>AlarmClockWeekSetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AlarmClockView\MainAlarmClockView.xaml.cs">
+      <DependentUpon>MainAlarmClockView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReminderView\MemoReminderView.xaml.cs">
+      <DependentUpon>MemoReminderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReminderView\ReminderAddItemView.xaml.cs">
+      <DependentUpon>ReminderAddItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReminderView\ReminderRingView.xaml.cs">
+      <DependentUpon>ReminderRingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReminderView\ReminderView.xaml.cs">
+      <DependentUpon>ReminderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WeatherView\MainWeatherView.xaml.cs">
+      <DependentUpon>MainWeatherView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WeatherView\WeatherDataView.xaml.cs">
+      <DependentUpon>WeatherDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WeatherView\WeatherSetterView.xaml.cs">
+      <DependentUpon>WeatherSetterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WateMarkTextBox.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command\DeletgateCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ButtonDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RollNum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\AlarmClockAddItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\AlarmClockEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\AlarmClockLabelSetView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\AlarmClockRingItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\AlarmClockRingSetView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\AlarmClockRingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\AlarmClockView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\AlarmClockWeekSetView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AlarmClockView\MainAlarmClockView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReminderView\MemoReminderView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReminderView\ReminderAddItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReminderView\ReminderRingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ReminderView\ReminderView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WeatherView\MainWeatherView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WeatherView\WeatherDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WeatherView\WeatherSetterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\99.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\MainPageImages\提醒事项-常态.png" />
+    <Resource Include="bin\Debug\Resources\MainPageImages\提醒事项-选中.png" />
+    <Resource Include="bin\Debug\Resources\MainPageImages\闹钟-常态.png" />
+    <Resource Include="bin\Debug\Resources\MainPageImages\闹钟-选中.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\WeatherImages\白天少云.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\WeatherBigImages\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\WeatherBigImages\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\MainWeatherImages\set_nor.png" />
+    <Resource Include="bin\Debug\Resources\MainWeatherImages\set_sel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\WeatherSmallImages\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\WeatherSmallImages\34.png" />
+    <Resource Include="bin\Debug\Resources\WeatherSmallImages\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\WeatherSetterImages\back_nor.png" />
+    <Resource Include="bin\Debug\Resources\WeatherSetterImages\back_sel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\arrow_right.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\back_nor.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\back_sel.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\delete_nor.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\delete_sel.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\remove_nor.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\remove_sel.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\add_nor.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\add_sel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\btn_stop_nor.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\btn_stop_sel.png" />
+    <Resource Include="bin\Debug\Resources\MainAlarmClockImages\icon_clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\ReminderImages\remind_memo.png" />
+    <Resource Include="bin\Debug\Resources\ReminderImages\remind_remote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\ReminderImages\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Resources\ReminderImages\voice_nor.png" />
+    <Resource Include="bin\Debug\Resources\ReminderImages\voice_sel.png" />
+    <Resource Include="bin\Debug\Resources\ReminderImages\word_nor.png" />
+    <Resource Include="bin\Debug\Resources\ReminderImages\word_sel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.104.0\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.104.0\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.104.0\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.104.0\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

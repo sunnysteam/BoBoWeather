@@ -1,0 +1,108 @@
+﻿<Window x:Class="LifeService.View.WeatherView.MainWeatherView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LifeService.View.WeatherView"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d"
+        x:Name="MainWeatherWindow"
+        Title="MainWeatherView" WindowStyle="None" ResizeMode="CanMinimize"
+        AllowsTransparency="True" Background="Transparent" ShowInTaskbar="False"
+        OpacityMask="White" WindowStartupLocation="CenterScreen" BorderThickness="24" Height="380" Width="425" Style="{DynamicResource ResourceKey=windowOpacity}">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/LifeService;component/ButtonDictionary.xaml"/>
+                <ResourceDictionary Source="/LifeService;component/WindowDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.Effect>
+        <DropShadowEffect BlurRadius="5" ShadowDepth="1" Color="#FF292121"/>
+    </Window.Effect>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Deactivated">
+            <i:InvokeCommandAction Command="{Binding DeactivatedCommand}" CommandParameter="{Binding ElementName=MainWeatherWindow}" />
+        </i:EventTrigger>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}" CommandParameter="{Binding ElementName=MainWeatherWindow}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Viewbox>
+        <i:Interaction.Triggers>
+            <i:EventTrigger EventName="MouseLeftButtonDown">
+                <i:InvokeCommandAction Command="{Binding WindowDragCommand}" CommandParameter="{Binding ElementName=MainWeatherWindow}" />
+            </i:EventTrigger>
+            <!--<i:EventTrigger EventName="LostFocus">
+                <i:InvokeCommandAction Command="{Binding LostFocusCommand}" CommandParameter="{Binding ElementName=MainWeatherWindow}" />
+            </i:EventTrigger>-->
+        </i:Interaction.Triggers>
+        <Border BorderThickness="0.5" CornerRadius="5,5,5,5" Name="top" Height="281" Width="425" BorderBrush="Transparent">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0,0" StartPoint="0,0">
+                    <GradientStop Color="#18344a"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid x:Name="mainGrid" Style="{StaticResource OpacityGridStyle}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0"  BorderBrush="Transparent" BorderThickness="0,1,0,0" CornerRadius="0,0,0,5">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0,0" StartPoint="0,0">
+                                <GradientStop Color="#22557b"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid>
+                            <Image Height="60" Width="55" Margin="41,26,45.333,52.667" Source="{Binding FirstWeatherIcon,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label Content="今天" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Top" FontFamily="Microsoft YaHei" Foreground="#FFFEFFFF" HorizontalContentAlignment="Center" />
+                            <Label Content="{Binding FirstWeather,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Margin="18,85,21.333,0" VerticalAlignment="Top" Foreground="#FFFEFFFF" Width="102" HorizontalContentAlignment="Center"/>
+                            <Label Content="{Binding FirstDegree,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Margin="42,103,45.333,0" VerticalAlignment="Top" Width="54" Foreground="#FFFEFFFF" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Column="1"  BorderBrush="Transparent" BorderThickness="1,1,1,0" CornerRadius="0,0,0,0">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0,0" StartPoint="0,0">
+                                <GradientStop Color="#153f5f"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid>
+                            <Image Height="60" Width="55" Margin="41,26,45.333,52.667" Source="{Binding SecondWeatherIcon,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label Content="明天" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Top" FontFamily="Microsoft YaHei" Foreground="#FFFEFFFF" HorizontalContentAlignment="Center" />
+                            <Label Content="{Binding SecondWeather,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Margin="18,85,21.333,0" VerticalAlignment="Top" Foreground="#FFFEFFFF" Width="102" HorizontalContentAlignment="Center"/>
+                            <Label Content="{Binding SecondDegree,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Margin="42,103,45.333,0" VerticalAlignment="Top" Width="54" Foreground="#FFFEFFFF" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Column="2"  BorderBrush="Transparent" BorderThickness="0,1,0,0" CornerRadius="0,0,5,0">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0,0" StartPoint="0,0">
+                                <GradientStop Color="#153f5f"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid>
+                            <Image Height="60" Width="55" Margin="41,26,45.333,52.667" Source="{Binding ThirdWeatherIcon,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                            <Label Content="后天" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Top" FontFamily="Microsoft YaHei" Foreground="#FFFEFFFF" HorizontalContentAlignment="Center" />
+                            <Label Content="{Binding ThirdWeather,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Margin="18,85,21.333,0" VerticalAlignment="Top" Foreground="#FFFEFFFF" Width="102" HorizontalContentAlignment="Center"/>
+                            <Label Content="{Binding ThirdDegree,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" Margin="42,103,45.333,0" VerticalAlignment="Top" Width="54" Foreground="#FFFEFFFF" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <Image Grid.Row="0" HorizontalAlignment="Left" Margin="10,-59,0,0" VerticalAlignment="Top" Width="155" Height="166" Source="{Binding NowWeatherIcon,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                <Label Grid.Row="0" Content="{Binding NowDegree,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="170,12,0,0" VerticalAlignment="Top" Width="134" Height="95" FontSize="80" Foreground="White" FontFamily="Century Gothic"/>
+                <Label Grid.Row="0" Content="{Binding NowWeather,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" Margin="0,81,19,0" VerticalAlignment="Top" Foreground="#FEFFFF" FontFamily="Microsoft YaHei" HorizontalContentAlignment="Right"/>
+                <Label Grid.Row="0" Content="{Binding FirstDegree,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" Margin="0,106,63,0" VerticalAlignment="Top" FontSize="14" Foreground="#FEFFFF" FontFamily="Microsoft YaHei" HorizontalContentAlignment="Right"/>
+                <Label Grid.Row="0" Content="今天" HorizontalAlignment="Right" Margin="0,106,19,0" VerticalAlignment="Top" FontSize="14" Foreground="#FEFFFF" FontFamily="Microsoft YaHei" RenderTransformOrigin="0.497,0.222" HorizontalContentAlignment="Right"/>
+                <Label Grid.Row="0" Content="{Binding City,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" Margin="0,55,19,0" VerticalAlignment="Top" Foreground="#FEFFFF" FontFamily="Microsoft YaHei" HorizontalContentAlignment="Right"/>
+                <Button x:Name="button" Grid.Row="0" Content="设置" Style="{StaticResource MainWeatherSetterButton}" Margin="388,0,0,90" Command="{Binding SetterCommand}" CommandParameter="{Binding ElementName=top}"/>
+            </Grid>
+        </Border>
+    </Viewbox>
+</Window>

@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="LifeService.MainView"
+             x:Name="Main_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+             mc:Ignorable="d" 
+             >
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ButtonDictionary.xaml"/>
+                <ResourceDictionary Source="/LifeService;component/WindowDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid x:Name="windowGrid">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Loaded">
+                    <i:InvokeCommandAction Command="{Binding ViewBoxCommand}" CommandParameter="{Binding ElementName=windowGrid}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Viewbox x:Name="Viewbox" Margin="5,5,5,5" Height="150" Width="390">
+                <Grid Margin="0,0,0,0" Height="150" Width="390">
+                    <Button x:Name="button"  
+                            VerticalAlignment="Top" Height="120" Width="110" Style="{StaticResource MainWeatherButton}" 
+                            Command="{Binding WeatherCommand}" CommandParameter="{Binding ElementName=button}" Margin="18,10,262,0"  >
+                        <Image Source="{Binding Path=WeatherIcon,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Stretch="Fill" />
+                    </Button>
+                    <Button x:Name="button1" Content="提醒" HorizontalAlignment="Left" Margin="322,60,0,0"
+                            VerticalAlignment="Top" Style="{StaticResource MainReminderButton}" Command="{Binding RemindCommand}" CommandParameter="{Binding ElementName=button1}" />
+                    <Button x:Name="button2" Content="闹钟" HorizontalAlignment="Left" Margin="255,60,0,0"
+                            VerticalAlignment="Top"
+                            Style="{StaticResource MainAlarmClockButton}" Command="{Binding MainAlarmClockCommand}" CommandParameter="{Binding ElementName=button2}" />
+                    <Label Content="{Binding ResultDegree,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="144,21,0,0" VerticalAlignment="Top" Height="71" Width="115" FontSize="60" FontFamily="Century Gothic" Foreground="White"/>
+                    <ScrollViewer x:Name="sorcllq" Margin="145,92,207,29" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Hidden" Style="{x:Null}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Loaded">
+                                <i:InvokeCommandAction Command="{Binding CityScrollViewCommand}" CommandParameter="{Binding ElementName=sorcllq}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Label Content="{Binding ResultCity,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" FontFamily="Microsoft YaHei" Foreground="White"/>
+                    </ScrollViewer>
+                    <ScrollViewer x:Name="sorcll" Width="55" Margin="188,92,147,29" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Hidden" Style="{x:Null}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Loaded">
+                                <i:InvokeCommandAction Command="{Binding WeatherScrollViewCommand}" CommandParameter="{Binding ElementName=sorcll}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Label Content="{Binding ResultWeather,UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left"  VerticalAlignment="Top"  FontSize="14" FontFamily="Microsoft YaHei" Foreground="White"/>
+                    </ScrollViewer>
+                    <!--<Label Content="{Binding ResultCity,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="144,92,0,0" VerticalAlignment="Top" Width="39" FontSize="14" FontFamily="Microsoft YaHei" Foreground="White"/>
+                    <Label Content="{Binding ResultWeather,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="188,92,0,0" VerticalAlignment="Top" Width="55" FontSize="14" FontFamily="Microsoft YaHei" Foreground="White"/>-->
+                </Grid>
+            </Viewbox>
+        </Grid>
+    </Grid>
+</UserControl>

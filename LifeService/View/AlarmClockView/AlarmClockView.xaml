@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="LifeService.View.AlarmClockView.AlarmClockView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:local="clr-namespace:LifeService"
+             mc:Ignorable="d" x:Name="AlarmClock">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/LifeService;component/ButtonDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid x:Name="mainGrid" Width="425" Height="92">
+        <Border x:Name="mainBorder" Margin="28,0,-80,0" BorderBrush="#FF3F576A" BorderThickness="0,0,0,1">
+            <ScrollViewer x:Name="ScrollViewer" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Margin="0,0,80,2" PanningMode="Both" ManipulationBoundaryFeedback="ScrollViewer_ManipulationBoundaryFeedback" ScrollChanged="ScrollViewer_ScrollChanged_1" Style="{x:Null}">
+                <Grid>
+                    <local:BulletCheckBox Style="{StaticResource BulletCheckBoxStyle}" Background="{x:Null}" CheckedText="" Text="" Margin="328,36,85,26" Width="Auto" Height="Auto" IsChecked="{Binding IsOpen,UpdateSourceTrigger=PropertyChanged}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Checked">
+                                <i:InvokeCommandAction Command="{Binding CheckedBoxCommand}" CommandParameter="{Binding ElementName=ScrollViewer}" />
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="Unchecked">
+                                <i:InvokeCommandAction Command="{Binding CheckedBoxCommand}" CommandParameter="{Binding ElementName=ScrollViewer}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </local:BulletCheckBox>
+                    <Button Content="删除" Style="{StaticResource NoborderButtonStyle}" FontFamily="Microsoft YaHei" FontSize="16" Background="White" Foreground="White" Margin="397,0,0,0" Width="80" Command="{Binding DeleteButtonCommand}" CommandParameter="{Binding ElementName=AlarmClock}"/>
+                    <Label Content="{Binding MainLabel,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="-5,62,0,0" VerticalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#FFA4A4A4" FontSize="14" VerticalContentAlignment="Center"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Content="{Binding Format,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="-7,28,0,0" VerticalAlignment="Top" Foreground="#a4a4a4" FontSize="24" FontFamily="Microsoft YaHei" VerticalContentAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="{Binding AlarmTime,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="-5,9,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48" FontFamily="Helvetica Neue LT Pro"/>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

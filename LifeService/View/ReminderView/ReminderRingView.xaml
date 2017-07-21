@@ -1,0 +1,33 @@
+﻿<Window x:Class="LifeService.View.ReminderView.ReminderRingView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d"
+        x:Name="ReminderRingViewWindow" WindowStyle="None"  ResizeMode="NoResize" 
+        AllowsTransparency="True" Background="Transparent" ShowInTaskbar="False" OpacityMask="White" Width="1280" Height="800" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/LifeService;component/ButtonDictionary.xaml"/>
+                <ResourceDictionary Source="/LifeService;component/WindowDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}" CommandParameter="{Binding ElementName=ReminderRingViewWindow}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid Background="#CC000000">
+        <Grid Margin="0,0,0,0" Opacity="1" Width="500" Height="500">
+            <Label Content="{Binding Label,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" Foreground="#a4a4a4" FontFamily="Microsoft YaHei" FontSize="24" HorizontalContentAlignment="Center" />
+            <TextBlock Text="{Binding Content,UpdateSourceTrigger=PropertyChanged}" TextWrapping="WrapWithOverflow"  Width="380" Height="185" Margin="60,104,60,211" FontSize="18" FontFamily="Microsoft YaHei" Foreground="White" HorizontalAlignment="Center" FontWeight="Bold" />
+            <Label Content="{Binding ReminderTime,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="White" FontFamily="Century Gothic" FontSize="48" VerticalContentAlignment="Bottom" Margin="0,0,0,137" HorizontalContentAlignment="Center"/>
+            <Button Command="{Binding CloseButtonCommand}" CommandParameter="{Binding ElementName=ReminderRingViewWindow}" HorizontalAlignment="Center" Margin="112,377,112,0" VerticalAlignment="Top" Style="{StaticResource AlarmClockRingStopButton}"/>
+            <Button Content="稍后提醒" Command="{Binding NextButtonCommand}" CommandParameter="{Binding ElementName=ReminderRingViewWindow}" Style="{StaticResource OnlyContentButtonStyle}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF0490FF" FontFamily="Microsoft YaHei" 
+                    FontSize="18" HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" VerticalAlignment="Top" Margin="213,439,0,0" />
+        </Grid>
+    </Grid>
+</Window> 

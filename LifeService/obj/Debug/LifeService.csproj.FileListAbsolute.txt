@@ -1,0 +1,245 @@
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\MainWindow.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\AlarmClockView\AlarmClockView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\AlarmClockView\MainAlarmClockView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\PhoneCallView\MainShortMessageView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\MainMemoReminderView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\MainRemoteReminderView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\MemoReminderView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\RemoteReminderView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\WeatherView\WeatherView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\App.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\LifeService_MarkupCompile.cache
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\LifeService_MarkupCompile.lref
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\LifeService.exe.config
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\LifeService.csprojResolveAssemblyReference.cache
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\LifeService.exe
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\LifeService.pdb
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\AreaSuggest.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\DotNetProjects.Wpf.Extended.Toolkit.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\Lucene.Net.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\MainWindow.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\AlarmClockView\AlarmClockView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\AlarmClockView\MainAlarmClockView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\PhoneCallView\MainShortMessageView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\MainMemoReminderView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\MainRemoteReminderView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\MemoReminderView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\RemoteReminderView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\WeatherView\WeatherView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\LifeService.g.resources
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\LifeService.Properties.Resources.resources
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\LifeService.csproj.GenerateResource.Cache
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\LifeService.exe
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\LifeService.pdb
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\ReminderView.g.cs
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\obj\Debug\View\ReminderView\ReminderView.baml
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\System.Data.SQLite.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\sunnysteam\documents\visual studio 2015\Projects\Demo_First\LifeService\bin\Debug\System.Data.SQLite.xml
+E:\源码\Demo_First\LifeService\bin\Debug\LifeService.exe.config
+E:\源码\Demo_First\LifeService\obj\Debug\LifeService.exe
+E:\源码\Demo_First\LifeService\obj\Debug\LifeService.pdb
+E:\源码\LifeSerivce\LifeService\bin\Debug\LifeService.dll.config
+E:\源码\LifeSerivce\LifeService\bin\Debug\LifeService.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\LifeService.pdb
+E:\源码\LifeSerivce\LifeService\bin\Debug\AreaSuggest.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\DotNetProjects.Wpf.Extended.Toolkit.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\Microsoft.Expression.Interactions.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\System.Data.SQLite.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\System.Data.SQLite.Linq.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\System.Windows.Interactivity.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\Lucene.Net.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\System.Data.SQLite.xml
+E:\源码\LifeSerivce\LifeService\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\LifeService\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+E:\源码\LifeSerivce\WpfApplication1\bin\Debug\LifeService.dll
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\MainAlarmClockView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\PhoneCallView\MainShortMessageView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MainMemoReminderView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MainRemoteReminderView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MemoReminderView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\RemoteReminderView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\LifeService_MarkupCompile.cache
+E:\源码\LifeSerivce\LifeService\obj\Debug\LifeService_MarkupCompile.lref
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\MainAlarmClockView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\PhoneCallView\MainShortMessageView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MainMemoReminderView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MainRemoteReminderView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MemoReminderView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\RemoteReminderView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\LifeService.g.resources
+E:\源码\LifeSerivce\LifeService\obj\Debug\LifeService.Properties.Resources.resources
+E:\源码\LifeSerivce\LifeService\obj\Debug\LifeService.csproj.GenerateResource.Cache
+E:\源码\LifeSerivce\LifeService\obj\Debug\LifeService.dll
+E:\源码\LifeSerivce\LifeService\obj\Debug\LifeService.pdb
+E:\源码\LifeSerivce\WpfApplication1\bin\Debug\LifeService.dll.config
+E:\源码\LifeSerivce\WpfApplication1\bin\Debug\LifeService.pdb
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MemoReminderRingView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MemoReminderRingView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\MainView.g.cs
+E:\源码\LifeSerivce\LifeService\obj\Debug\MainView.baml
+E:\源码\LifeSerivce\LifeService\obj\Debug\LifeService.csprojResolveAssemblyReference.cache
+D:\源码\图灵\Project\LifeSerivce\WpfApplication1\bin\Debug\LifeService.dll.config
+D:\源码\图灵\Project\LifeSerivce\WpfApplication1\bin\Debug\LifeService.dll
+D:\源码\图灵\Project\LifeSerivce\WpfApplication1\bin\Debug\LifeService.pdb
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\MainView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\PhoneCallView\MainShortMessageView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\LifeService_MarkupCompile.cache
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\LifeService_MarkupCompile.lref
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\ButtonDictionary.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\ImageButton.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\MainView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\PhoneCallView\MainShortMessageView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\LifeService.g.resources
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\LifeService.Properties.Resources.resources
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\LifeService.csproj.GenerateResource.Cache
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\LifeService.dll
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\LifeService.pdb
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\MainWeatherView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\MainWeatherView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\WindowDictionary.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherSetterView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherSetterView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherDataView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherDataView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\MainAlarmClockView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView1\MainAlarmClockViewOld.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView1\MainAlarmClockViewOld.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\MainAlarmClockView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView1\AlarmClockViewOld.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView1\AlarmClockViewOld.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockEditView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockEditView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockAddItemView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockAddItemView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\RollNum.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\RollNum.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockWeekSetView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockWeekSetView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockLabelSetView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockLabelSetView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView1\AlarmClockRingViewOld.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView1\AlarmClockRingViewOld.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MemoReminderView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MemoReminderView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderAddItemView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderAddItemView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderRingVIew.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderRingVIew.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingItemView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingSetView.g.cs
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingItemView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingSetView.baml
+D:\源码\图灵\Project\LifeSerivce\LifeService\obj\Debug\LifeService.csprojResolveAssemblyReference.cache
+D:\源码\图灵\Project\Project\LifeSerivce\WpfApplication1\bin\Debug\LifeService.dll.config
+D:\源码\图灵\Project\Project\LifeSerivce\WpfApplication1\bin\Debug\LifeService.dll
+D:\源码\图灵\Project\Project\LifeSerivce\WpfApplication1\bin\Debug\LifeService.pdb
+D:\源码\图灵\Project\Project\LifeSerivce\WpfApp1\bin\Debug\LifeService.dll.config
+D:\源码\图灵\Project\Project\LifeSerivce\WpfApp1\bin\Debug\LifeService.xml
+D:\源码\图灵\Project\Project\LifeSerivce\WpfApp1\bin\Debug\LifeService.dll
+D:\源码\图灵\Project\Project\LifeSerivce\WpfApp1\bin\Debug\LifeService.pdb
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\MainView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderRingView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\MainView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\RollNum.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockAddItemView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockEditView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockLabelSetView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingItemView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingSetView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockWeekSetView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\MainAlarmClockView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MemoReminderView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderAddItemView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderRingView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\MainWeatherView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherDataView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherSetterView.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\LifeService_MarkupCompile.cache
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\LifeService_MarkupCompile.lref
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\ButtonDictionary.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\RollNum.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockAddItemView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockEditView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockLabelSetView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingItemView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingSetView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockRingView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\AlarmClockWeekSetView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\AlarmClockView\MainAlarmClockView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\MemoReminderView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderAddItemView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\ReminderView\ReminderView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\MainWeatherView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherDataView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\View\WeatherView\WeatherSetterView.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\WindowDictionary.baml
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\LifeService.g.resources
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\LifeService.Properties.Resources.resources
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\LifeService.csproj.GenerateResource.Cache
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\LifeService.dll
+D:\源码\图灵\Project\Project\LifeSerivce\LifeService\obj\Debug\LifeService.pdb

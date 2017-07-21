@@ -1,0 +1,4 @@
+D:\源码\图灵\Project\Project\LifeSerivce\InstallerService\bin\Debug\InstallerService.dll
+D:\源码\图灵\Project\Project\LifeSerivce\InstallerService\bin\Debug\InstallerService.pdb
+D:\源码\图灵\Project\Project\LifeSerivce\InstallerService\obj\Debug\InstallerService.dll
+D:\源码\图灵\Project\Project\LifeSerivce\InstallerService\obj\Debug\InstallerService.pdb

@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="LifeService.View.WeatherView.WeatherDataView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:local="clr-namespace:LifeService.View.WeatherView"
+             mc:Ignorable="d">
+    <Grid x:Name="mainGrid" Height="42" Width="425" Background="#18344a">
+        <Border BorderThickness="0,0,0,0.5" Name="top" Width="360" BorderBrush="#0a2631">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                    <i:InvokeCommandAction Command="{Binding MouseLeftButtonDownCommand}" CommandParameter="{Binding ElementName=mainGrid}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <Grid HorizontalAlignment="Center" Margin="0,0,0,-0.667" VerticalAlignment="Center">
+                <TextBlock x:Name="city" Width="360" Height="42" FontSize="16" FontWeight="Bold" FontFamily="Microsoft YaHei"  Foreground="#919eaa" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,10,-10,-10">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Loaded">
+                            <i:InvokeCommandAction Command="{Binding LoadedCommand}" CommandParameter="{Binding ElementName=city}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
