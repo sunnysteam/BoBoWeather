@@ -1,2 +1,2 @@
 # DesktopWeather
-一个桌面天气软件
+##使用Wpf开发的桌面天气插件
