@@ -6,7 +6,9 @@
 * 支持城市查询<br>
 * 闹钟功能<br>
 * 备忘提醒功能<br>
-### 2、关键代码:
+### 2、操作演示：
+![](https://github.com/BoBoWeather/DesktopWeather/weatherscreen.gif)  
+### 3、关键代码:
 * 天气读取代码<br>
 ```C#
         /// <summary>
@@ -134,4 +136,4 @@
 ### 3、程序包下载：
     你可以直接下载程序包使用：<br>
     [安装包下载](http://pan.baidu.com/s/1bpD4tp9)<br>
-    提取码 zkp2
+    提取码 `zkp2`
