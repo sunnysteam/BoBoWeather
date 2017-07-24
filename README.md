@@ -7,7 +7,7 @@
 * 闹钟功能<br>
 * 备忘提醒功能<br>
 ### 2、操作演示：
-![](https://github.com/sunnysteam/BoBoWeather/DesktopWeather/weatherscreen.gif)  
+![](https://github.com/sunnysteam/BoBoWeather/blob/master/DesktopWeather/weatherscreen.gif)  
 ### 3、关键代码:
 * 天气读取代码<br>
 ```C#
