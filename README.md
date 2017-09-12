@@ -135,5 +135,5 @@
 ```
 ### 3、程序包下载：
     你可以直接下载程序包使用：<br>
-    [安装包下载](http://pan.baidu.com/s/1bpD4tp9)<br>
-    提取码 `zkp2`
+    [安装包下载](http://pan.baidu.com/s/1migfkNI)<br>
+    提取码 `33qv`
