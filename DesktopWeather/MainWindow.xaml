@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopWeather"
         mc:Ignorable="d"
-        WindowStyle="None"  ResizeMode="NoResize"
-        Background="#01ffffff" ShowInTaskbar="False"  AllowsTransparency="True"
+        WindowStyle="None" ResizeMode="NoResize"
+        Background="#01ffffff" ShowInTaskbar="False" AllowsTransparency="True"
         xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         WindowStartupLocation="Manual"
         Title="MainWindow" Height="150" Width="390" MouseLeftButtonDown="maingrid_MouseLeftButtonDown">
@@ -16,7 +16,7 @@
         <forms:MenuItem Text="Exit" Click="MenuItem_Click" />
     </local:GWindow.AreaMenuItems>-->
     <Grid x:Name="maingrid" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Top" Loaded="maingrid_Loaded">
-        <local:NotificationAreaIcon Icon="20170714050644141_easyicon_net_128.ico">
+        <local:NotificationAreaIcon Icon="20170714050644141_easyicon_net_128.ico" MouseClick="NotificationAreaIcon_MouseClick">
             <local:NotificationAreaIcon.MenuItems>
                 <forms:MenuItem Text="退出" Click="MenuItem_Click" DefaultItem="True"/>
             </local:NotificationAreaIcon.MenuItems>
