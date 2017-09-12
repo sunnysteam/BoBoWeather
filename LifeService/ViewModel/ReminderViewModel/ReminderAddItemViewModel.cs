@@ -548,7 +548,7 @@ namespace LifeService.ViewModel.ReminderViewModel
         /// <param name="element"></param>
         private void LoadRollData(RollNum element)
         {
-            switch(element.Name)
+            switch (element.Name)
             {
                 case "Roll_Years":
                     LoadRollYears(element);
@@ -573,7 +573,7 @@ namespace LifeService.ViewModel.ReminderViewModel
 
         private void Loaded(Grid element)
         {
-            if(element.Name.Equals("dateGrid"))
+            if (element.Name.Equals("dateGrid"))
             {
                 if (_isFirstLoaded)
                 {
@@ -582,7 +582,7 @@ namespace LifeService.ViewModel.ReminderViewModel
                     _isFirstLoaded = false;
                 }
             }
-           if(element.Name.Equals("mainGrid"))
+            if (element.Name.Equals("mainGrid"))
             {
                 if (_isEdit)
                 {
@@ -608,8 +608,8 @@ namespace LifeService.ViewModel.ReminderViewModel
                 //    element.Children.RemoveAt(index);
                 //}
             }
-            
-       }
+
+        }
 
         private void LoadedEdit(Border element)
         {
@@ -647,7 +647,7 @@ namespace LifeService.ViewModel.ReminderViewModel
                 }
             }
             //显示或隐藏删除框
-            if(_isEdit)
+            if (_isEdit)
             {
                 if (element.Name.Equals("deleteBorder"))
                 {
@@ -703,7 +703,7 @@ namespace LifeService.ViewModel.ReminderViewModel
                     LogWriter.Instance.Error(result.Exception);
                 }
             });
-            
+
         }
 
         /// <summary>
@@ -873,7 +873,7 @@ namespace LifeService.ViewModel.ReminderViewModel
         /// <param name="element"></param>
         private void LoadedTextBox(TextBox element)
         {
-            if(_isMemoReminder)
+            if (_isMemoReminder)
             {
                 element.IsEnabled = true;
             }
@@ -943,107 +943,149 @@ namespace LifeService.ViewModel.ReminderViewModel
         private void LoadRollMinutes(RollNum element)
         {
             _minutes = element;
-            List<string> ls = new List<string>();
-            for (int i = 0; i < 60; i++)
+            if (string.IsNullOrEmpty(element.Currentitem))
             {
-                if (i < 10)
+                List<string> ls = new List<string>();
+                for (int i = 0; i < 60; i++)
                 {
-                    ls.Add("0" + i.ToString());
+                    if (i < 10)
+                    {
+                        ls.Add("0" + i.ToString());
+                    }
+                    else
+                    {
+                        ls.Add(i.ToString());
+                    }
                 }
-                else
-                {
-                    ls.Add(i.ToString());
-                }
+                element.Items = ls;
+                element.CurrentIndex = element.Items.IndexOf(minutes);
             }
-            element.Items = ls;
-            element.CurrentIndex = element.Items.IndexOf(minutes);
+            else
+            {
+                minutes = element.Currentitem;
+            }
         }
 
         private void LoadRollHours(RollNum element)
         {
             _hours = element;
-            List<string> ls = new List<string>();
-            if (_isFormat)
+            if (string.IsNullOrEmpty(element.Currentitem))
             {
-                for (int i = 0; i < 13; i++)
+                List<string> ls = new List<string>();
+                if (_isFormat)
                 {
-                    ls.Add(i.ToString());
+                    for (int i = 0; i < 13; i++)
+                    {
+                        ls.Add(i.ToString());
+                    }
                 }
+                else
+                {
+                    for (int i = 0; i < 24; i++)
+                    {
+                        ls.Add(i.ToString());
+                    }
+                }
+                element.Items = ls;
+                element.CurrentIndex = element.Items.IndexOf(hours);
             }
             else
             {
-                for (int i = 0; i < 24; i++)
-                {
-                    ls.Add(i.ToString());
-                }
+                hours = element.Currentitem;
             }
-            element.Items = ls;
-            element.CurrentIndex = element.Items.IndexOf(hours);
         }
 
         private void LoadRollFormat(RollNum element)
         {
             _format = element;
-            if (DateTime.Now.ToShortTimeString().Contains("上午") || DateTime.Now.ToShortTimeString().Contains("下午"))
+            if (string.IsNullOrEmpty(element.Currentitem))
             {
-                _isFormat = true;
+                if (DateTime.Now.ToShortTimeString().Contains("上午") || DateTime.Now.ToShortTimeString().Contains("下午"))
+                {
+                    _isFormat = true;
+                }
+                else
+                {
+                    _isFormat = false;
+                }
+                if (_isFormat)
+                {
+                    List<string> ls = new List<string>();
+                    ls.Add("上午");
+                    ls.Add("下午");
+                    element.Items = ls;
+                    (element.Parent as Canvas).Width = 60;
+                    element.CurrentIndex = element.Items.IndexOf(format);
+                }
+                else
+                {
+                    element.Items.Clear();
+                    (element.Parent as Canvas).Width = 40;
+                }
             }
             else
             {
-                _isFormat = false;
-            }
-            if (_isFormat)
-            {
-                List<string> ls = new List<string>();
-                ls.Add("上午");
-                ls.Add("下午");
-                element.Items = ls;
-                (element.Parent as Canvas).Width = 60;
-                element.CurrentIndex = element.Items.IndexOf(format);
-            }
-            else
-            {
-                element.Items.Clear();
-                (element.Parent as Canvas).Width = 40;
+                format = element.Currentitem;
             }
         }
 
         private void LoadRollDays(RollNum element)
         {
             _days = element;
-            List<string> ls = new List<string>();
-            for (int i = 1; i <= 31; i++)
+            if (string.IsNullOrEmpty(element.Currentitem))
             {
-                ls.Add(i.ToString());
+                List<string> ls = new List<string>();
+                for (int i = 1; i <= 31; i++)
+                {
+                    ls.Add(i.ToString());
+                }
+                element.Items = ls;
+                element.CurrentIndex = element.Items.IndexOf(days);
             }
-            element.Items = ls;
-            element.CurrentIndex = element.Items.IndexOf(days);
+            else
+            {
+                days = element.Currentitem;
+            }
         }
 
         private void LoadRollMonths(RollNum element)
         {
             _months = element;
-            List<string> ls = new List<string>();
-            for (int i = 1; i <= 12; i++)
+            if (string.IsNullOrEmpty(element.Currentitem))
             {
-                ls.Add(i.ToString());
+                List<string> ls = new List<string>();
+                for (int i = 1; i <= 12; i++)
+                {
+                    ls.Add(i.ToString());
+                }
+                element.Items = ls;
+                element.CurrentIndex = element.Items.IndexOf(months);
             }
-            element.Items = ls;
-            element.CurrentIndex = element.Items.IndexOf(months);
+            else
+            {
+                months = element.Currentitem;
+            }
         }
 
         private void LoadRollYears(RollNum element)
         {
             _years = element;
-            List<string> ls = new List<string>();
-            int year = DateTime.Now.Year;
-            for (int i = 0; i < 5; i++)
+            if (string.IsNullOrEmpty(element.Currentitem))
             {
-                ls.Add(year.ToString());
-                year++;
+                List<string> ls = new List<string>();
+                int year = DateTime.Now.Year;
+                for (int i = 0; i < 5; i++)
+                {
+                    ls.Add(year.ToString());
+                    year++;
+                }
+                element.Items = ls;
+                element.CurrentIndex = element.Items.IndexOf(years);
             }
-            element.Items = ls;
-            element.CurrentIndex = element.Items.IndexOf(years);
+            else
+            {
+                years = element.Currentitem;
+            }
         }
 
         /// <summary>
