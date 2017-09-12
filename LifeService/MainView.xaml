@@ -23,6 +23,9 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
             <Viewbox x:Name="Viewbox" Margin="5,5,5,5" Height="150" Width="390">
+                <Viewbox.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="5" Color="#FF292121"/>
+                </Viewbox.Effect>
                 <Grid Margin="0,0,0,0" Height="150" Width="390">
                     <Button x:Name="button"  
                             VerticalAlignment="Top" Height="120" Width="110" Style="{StaticResource MainWeatherButton}" 
