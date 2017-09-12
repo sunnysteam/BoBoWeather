@@ -365,32 +365,39 @@ namespace LifeService.ViewModel.AlarmClockViewModel
             try
             {
                 _hours = element;
-                List<string> ls = new List<string>();
-                if (_isFormat)
+                if (string.IsNullOrEmpty(element.Currentitem))
                 {
-                    for (int i = 0; i < 13; i++)
+                    List<string> ls = new List<string>();
+                    if (_isFormat)
                     {
-                        ls.Add(i.ToString());
+                        for (int i = 0; i < 13; i++)
+                        {
+                            ls.Add(i.ToString());
+                        }
+                    }
+                    else
+                    {
+                        for (int i = 0; i < 24; i++)
+                        {
+                            ls.Add(i.ToString());
+                        }
+                    }
+                    element.Items = ls;
+                    if (!string.IsNullOrEmpty(Hours))
+                    {
+                        element.CurrentIndex = element.Items.IndexOf(Hours);
                     }
                 }
                 else
                 {
-                    for (int i = 0; i < 24; i++)
-                    {
-                        ls.Add(i.ToString());
-                    }
-                }
-                element.Items = ls;
-                if (!string.IsNullOrEmpty(Hours))
-                {
-                    element.CurrentIndex = element.Items.IndexOf(Hours);
+                    Hours = element.Currentitem;
                 }
             }
             catch (Exception e)
             {
                 LogWriter.Instance.Error(e);
             }
-            
+
         }
 
 
@@ -403,22 +410,29 @@ namespace LifeService.ViewModel.AlarmClockViewModel
             try
             {
                 _minutes = element;
-                List<string> ls = new List<string>();
-                for (int i = 0; i < 60; i++)
+                if (string.IsNullOrEmpty(element.Currentitem))
                 {
-                    if (i < 10)
+                    List<string> ls = new List<string>();
+                    for (int i = 0; i < 60; i++)
                     {
-                        ls.Add("0" + i.ToString());
+                        if (i < 10)
+                        {
+                            ls.Add("0" + i.ToString());
+                        }
+                        else
+                        {
+                            ls.Add(i.ToString());
+                        }
                     }
-                    else
+                    element.Items = ls;
+                    if (!string.IsNullOrEmpty(Minutes))
                     {
-                        ls.Add(i.ToString());
+                        element.CurrentIndex = element.Items.IndexOf(Minutes);
                     }
                 }
-                element.Items = ls;
-                if (!string.IsNullOrEmpty(Minutes))
+                else
                 {
-                    element.CurrentIndex = element.Items.IndexOf(Minutes);
+                    Minutes = element.Currentitem;
                 }
             }
             catch (Exception e)
@@ -436,30 +450,37 @@ namespace LifeService.ViewModel.AlarmClockViewModel
             try
             {
                 format = element;
-                if (DateTime.Now.ToShortTimeString().Contains("上午") || DateTime.Now.ToShortTimeString().Contains("下午"))
+                if (string.IsNullOrEmpty(element.Currentitem))
                 {
-                    _isFormat = true;
+                    if (DateTime.Now.ToShortTimeString().Contains("上午") || DateTime.Now.ToShortTimeString().Contains("下午"))
+                    {
+                        _isFormat = true;
+                    }
+                    else
+                    {
+                        _isFormat = false;
+                    }
+                    if (_isFormat)
+                    {
+                        List<string> ls = new List<string>();
+                        ls.Add("上午");
+                        ls.Add("下午");
+                        element.Items = ls;
+                        (element.Parent as Canvas).Width = 80;
+                    }
+                    else
+                    {
+                        element.Items.Clear();
+                        (element.Parent as Canvas).Width = 0;
+                    }
+                    if (!string.IsNullOrEmpty(Format))
+                    {
+                        element.CurrentIndex = element.Items.IndexOf(Format);
+                    }
                 }
                 else
                 {
-                    _isFormat = false;
-                }
-                if (_isFormat)
-                {
-                    List<string> ls = new List<string>();
-                    ls.Add("上午");
-                    ls.Add("下午");
-                    element.Items = ls;
-                    (element.Parent as Canvas).Width = 80;
-                }
-                else
-                {
-                    element.Items.Clear();
-                    (element.Parent as Canvas).Width = 0;
-                }
-                if (!string.IsNullOrEmpty(Format))
-                {
-                    element.CurrentIndex = element.Items.IndexOf(Format);
+                    Format = element.Currentitem;
                 }
             }
             catch (Exception e)
@@ -511,11 +532,11 @@ namespace LifeService.ViewModel.AlarmClockViewModel
         /// <param name="element"></param>
         private void LoadedDeleteButton(Border element)
         {
-            if(TitleContent.Equals("添加闹钟"))
+            if (TitleContent.Equals("添加闹钟"))
             {
                 element.Visibility = Visibility.Hidden;
             }
-            else if(TitleContent.Equals("编辑闹钟"))
+            else if (TitleContent.Equals("编辑闹钟"))
             {
                 element.Visibility = Visibility.Visible;
             }
