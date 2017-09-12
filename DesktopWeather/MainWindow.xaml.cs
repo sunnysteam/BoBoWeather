@@ -97,16 +97,16 @@ namespace DesktopWeather
                 Left = SystemParameters.WorkArea.Width - Width;
                 Top = 50;
 
-                IntPtr desktopHwnd = GetDesktopPtr();
-                IntPtr result = SetParent(new WindowInteropHelper(this).Handle, desktopHwnd);
-
                 InstallFonts(AppDomain.CurrentDomain.BaseDirectory + "Fonts\\");
+
+                //IntPtr desktopHwnd = GetDesktopPtr();
+                //IntPtr result = SetParent(new WindowInteropHelper(this).Handle, desktopHwnd);
             }
             catch (Exception ex)
             {
                 System.Windows.MessageBox.Show(ex.ToString());
             }
-            
+
         }
 
         /// <summary>
@@ -153,7 +153,7 @@ namespace DesktopWeather
         {
             string WinFontDir = Environment.GetEnvironmentVariable("windir") + "\\fonts\\";
             string FontFileName = f.Name;
-            string FontName = f.Name.Replace(f.Extension,"");
+            string FontName = f.Name.Replace(f.Extension, "");
             int Ret;
             int Res;
             string FontPath;
@@ -213,6 +213,12 @@ namespace DesktopWeather
         {
             LifeServicePlugin.Instance.Dispose();
             Close();
+        }
+
+        private void NotificationAreaIcon_MouseClick(object sender, MouseButtonEventArgs e)
+        {
+            this.Topmost = true;
+            this.Topmost = false;
         }
     }
 }
